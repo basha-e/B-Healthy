@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Health</title>
+  </head>
+  <body>
+    
+
+    <nav class="nav__bar">
+      <div class="logo">
+        <span class="material-symbols-outlined"> heart_plus </span>
+        <h2>B-Healthy</h2>
+      </div>
+      <ul class="navbar">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Service">Service</a></li>
+        <li><a href="#Doctor">Doctor</a></li>
+      </ul>
+      <div id="menu__btn" class="fas fa-bars"></div>
+    </nav>
+    <hr />
+    <section id="Home">
+      <div class="home">
+        <div class="home__first">
+          <h2>Welcome to B-Healthy</h2>
+          <p><h3> Your journey to better Health 
+            Starts here!!</h3>
+           
+            <br>
+          </p>
+          <button type="button">Health check </button>
+        </div>
+        <div class="home__second">
+          <img src="image/home.gif" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+    <section id="Service">
+    
+    <div class="about__page">
+  <!-- Add all components -->
+  <div class="about__one">
+    <i class="fas fa-chart-line"></i>
+    <h2>Real-Time Health Data</h2>
+    <p>Monitor your real-time heart rate, blood pressure, and temperature.</p>
+    <button type="button" onclick="window.location.href='reading.html';">View Dashboard</button>
+  </div>
+
+ 
+  <div class="about__five">
+    <i class="fas fa-leaf"></i>
+    <h2>Daily Health Tips</h2>
+    <p>Receive curated tips to maintain a healthy lifestyle.</p>
+    <br>
+    <button type="button" id="explore-tips-btn">Explore Tips</button>
+  </div>
+  
+  <!-- Add this after the about section -->
+  <div id="tips-card" class="tips-card hidden">
+    <h3>Today's Health Tip</h3>
+    <p id="tip-content">Stay hydrated! Drink at least 8 glasses of water daily.</p>
+    <button type="button" id="close-tips-btn">Close</button>
+  </div>
+  
+  <div class="about__six">
+    <i class="fas fa-ambulance"></i>
+    <h2>24/7 Ambulance</h2>
+    <p>Make a call for instant ambulance service in case of an emergency.</p>
+    <button type="button">Call</button>
+  </div>
+</div>
+    </section>
+    <section id="Doctor">
+  <div class="doctor__title">
+    <h2>Our <span>Doctors</span></h2>
+  </div>
+  <div class="doctor">
+    <!-- Doctor 1 -->
+    <div class="doctor__one">
+      <img src="image/doctor-1.png" alt=" " />
+      <h2>Dr. Be</h2>
+      <p>Expert Doctor</p>
+      <div class="media__icon">
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-brands fa-whatsapp"></i> <!-- WhatsApp Icon -->
+      </div>
+    </div>
+
+    <!-- Doctor 2 -->
+    <div class="doctor__two">
+      <img src="image/doctor-2.png" alt=" " />
+      <h2>Dr. Harshita</h2>
+      <p>Expert Doctor</p>
+      <div class="media__icon">
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-brands fa-whatsapp"></i> <!-- WhatsApp Icon -->
+      </div>
+    </div>
+
+    <!-- Doctor 3 -->
+    <div class="doctor__three">
+      <img src="image/doctor-3.png" alt=" " />
+      <h2>Dr. Amrutha</h2>
+      <p>Expert Doctor</p>
+      <div class="media__icon">
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-brands fa-whatsapp"></i> <!-- WhatsApp Icon -->
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+   <footer class="footer hidden" id="main-footer">
+      <p>&copy; 2024 B-Healthy. All rights reserved.</p>
+  </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
